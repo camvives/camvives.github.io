@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Camila Vives - Página Personal</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+                       <!-- Back to top button -->
+                <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <script>
+                    //Get the button
+                    let mybutton = document.getElementById("btn-back-to-top");
+        
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function () {
+                    scrollFunction();
+                    };
+        
+                    function scrollFunction() {
+                    if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                    ) {
+                    mybutton.style.display = "block";
+                    } else {
+                    mybutton.style.display = "none";
+                    }
+                    }
+                    // When the user clicks on the button, scroll to the top of the document
+                    mybutton.addEventListener("click", backToTop);
+        
+                    function backToTop() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                    }
+                </script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Camvives</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#contactme">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/cover.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>FaceMask Detector</h1>
+                            
+                            <h2 class="subheading">Este proyecto se trata de una aplicación de escritorio con Python y OpenCV, que detecta el uso de máscara o barbijo.</h2>
+                            <a href="https://github.com/camvives/FacemaskDetector">
+                                <button type="button" class=" btn-md btn-outline-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github " viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg>
+                                    Ver código en Github
+                                </button>
+                            </a>
+                            <span class="meta mt-3">
+                                <p class="text-black-80 ">
+                                    Tecnologías: Python - OpenCV - SQLite - Tkinter
+                                  </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-15 col-lg-8 col-xl-10">
+                        <h2 id='descripción-del-proyecto'>Descripción del proyecto</h2>
+                        <p>En este proyecto se hará uso de la librería OpenCV para Python. OpenCV usa algoritmos de Machine Learning para buscar rostros dentro de una imagen. La forma de lograr esto es reconociendo cientos de pequeños patrones y características que deben coincidir durante el procesamiento de imágenes.</p>
+                        <p>A partir de esto, el objetivo principal del programa es, dada una imagen, reconocer en primer lugar si existe un rostro humano dentro de ella, y si ese es el caso, detectar si la persona está usando cubrebocas. Teniendo en cuenta que un video es una serie ordenada de imágenes, es posible extender esta aplicación, y de esta forma poder lograr que el programa reconozca en videos a tiempo real si la persona que aparece en él está haciendo uso del cubrebocas o no. </p>
+                        <p>Adicionalmente, el programa guardará en una base de datos los estados ‘con máscara’ o ‘sin máscara’ detectados en tiempo real, junto con la fecha y hora de ocurrencia. Esto permitirá realizar estadísticas diarias, semanales, y mensuales, que serán mostradas a través de gráficas a modo de reportes.</p>
+                        <h2 id='bosquejo-de-arquitectura'>Bosquejo de Arquitectura</h2>
+                        <p>La arquitectura de la aplicación utilizará una estructura de 3 capas, las cuales se dividen en una capa de presentación (es decir, todo lo relacionado a la interfaz gráfica del usuario), una capa de negocios, que contendrá todos los cálculos y algoritmos de procesamiento de las imágenes, y por último una capa de datos, que almacenará los estados según corresponda. </p>
+                        <p><img class="img-fluid mx-auto d-block" src="../assets/images/FaceMask Detector/Esquema de capas.png" alt="Esquema de capas" style="zoom:50%;" /></p>
+                        <h2 id='modelo-funcional'>Modelo Funcional</h2>
+                        <p>El modelo funcional de la aplicación consiste en, a través de una cámara web obtener video a tiempo real, y de él, extraer un frame cada cierto periodo de tiempo. Este frame será procesado con la librería OpenCV, donde se detectará si existen rostros humanos y si es así, su posición en el espacio de la imagen. </p>
+                        <p>Luego, esa imagen será enviada a un modelo entrenado por la librería TensorFlow que nos devolverá una predicción de acuerdo a las características detectadas. Una vez obtenidas las predicciones, se clasificará el estado con las etiquetas ‘con máscara’ o ‘sin máscara’ y se procederá a dibujar sobre la imagen del video un rectángulo del color determinado (rojo o verde según el caso).</p>
+                        <p>Además, se guardará un registro en la base de datos de todos los estados que se detecten. La decisión de si el estado actual debe guardarse o no, corresponde a la siguiente premisa: si pasaron más de 30 segundos desde que se guardó el último estado o si el estado actual es distinto del anterior, se registra. Caso contrario, se desecha. De esta forma se tiene un registro de datos consistentes que no ocupan rápidamente el espacio de almacenamiento disponible en la base de datos.</p>
+                        <p><img class="img-fluid mx-auto d-block" src="../assets/images/FaceMask Detector/Modelo_Funcional.png" alt="Modelo funcional" style="zoom: 50%;" /></p>
+                        <h2 id='requerimientos'>Requerimientos</h2>
+                        <h3 id='funcionales'><strong>Funcionales</strong></h3>
+                        <ul>
+                        <li>El sistema debe extraer una imagen (frame) a partir de un video a tiempo real, en el cual una persona esté situada de frente a la cámara. </li>
+                        <li>El sistema debe detectar un rostro humano dentro de una imagen extraída e identificarla como área de interés (ROI).</li>
+                        <li>El sistema debe dibujar un recuadro en la zona de interés (ROI) del video, coloreado según la clasificación de la imagen.</li>
+                        <li>El sistema debe almacenar en una base de datos el registro de la fecha y hora, y la clasificación provenientes de la imagen analizada.</li>
+                        <li>El sistema debe permitir al cliente consultar los datos históricos a partir de estadísticas diarias, semanales y mensuales del sistema.</li>
+
+                        </ul>
+                        <h3 id='no-funcionales'><strong>No Funcionales</strong></h3>
+                        <ul>
+                        <li>El sistema debe ejecutarse desde un único archivo .py llamado app.py. (Portability)</li>
+                        <li>El sistema debe diseñarse con la arquitectura en 3 capas. (Maintainability)</li>
+                        <li>El sistema debe utilizar control de versiones mediante GIT. (Maintainability)</li>
+                        <li>El sistema debe estar programado en Python 3.8 o superior. (Maintainability)</li>
+                        <li>El sistema debe detectar el uso de la máscara el 90% de las veces. (Reliability)</li>
+                        <li>El sistema debe funcionar en un equipo hogareño estándar. (Performance)</li>
+                        <li>El sistema deberá cumplir con un tiempo de respuesta menor a 1 segundo. (Performance)</li>
+                        <li>El sistema debe utilizar una base de datos SQL o NoSQL (Flexibility)</li>
+
+                        </ul>
+                        <h2 id='stack-tecnológico'>Stack Tecnológico</h2>
+                        <h3 id='capa-de-datos'><strong>Capa de Datos</strong></h3>
+                        <p>En la capa de datos se utilizó SQLite. SQLite es una herramienta de software libre, que permite almacenar información en distintos dispositivos de una forma sencilla, eficaz, potente y rápida. La elección de esta tecnología tiene que ver con la sencillez de los datos a registrar y con la velocidad de escritura que requieren los mismos. Además, al no manejar ningún dato sensible dentro de la aplicación, no se requiere un mayor nivel de seguridad que el que provee este motor de base de datos.</p>
+                        <h3 id='capa-de-negocio'><strong>Capa de Negocio</strong></h3>
+                        <p>En la capa de negocios se emplea el lenguaje Python con las siguientes librerías:</p>
+                        <ul>
+                        <li><strong>MatPlotLib</strong>: Es una librería especializada en la creación de gráficos en dos dimensiones. Permite crear y personalizar los tipos de gráficos más comunes, entre ellos histogramas, diagramas de barra, diagramas de líneas, etc.</li>
+                        <li><strong>Tensor Flow</strong>: Es una librería de código abierto para cálculo numérico, usando como forma de programación grafos de flujo de datos. Con esta librería somos capaces, entre otras operaciones, de construir y entrenar redes neuronales para detectar correlaciones y descifrar patrones, análogos al aprendizaje y razonamiento usados por los humanos.</li>
+                        <li><strong>Numpy:</strong> Es una librería especializada en el cálculo numérico y el análisis de datos, especialmente para un gran volumen de datos. Incorpora una nueva clase de objetos llamados arrays que permite representar colecciones de datos de un mismo tipo en varias dimensiones, y funciones muy eficientes para su manipulación.</li>
+                        <li><strong>OpenCV:</strong> Es una biblioteca libre de visión artificial originalmente desarrollada por Intel. OpenCV significa Open Computer Vision (Visión Artificial Abierta). Entre otras cosas, permite la detección de movimiento, reconocimiento de objetos, reconstrucción 3D a partir de imágenes, reconocimiento facial, etc.</li>
+
+                        </ul>
+                        <p>Es importante aclarar que para poder entrenar al modelo que detecta si una persona tiene máscara o no, se utilizó la herramienta Teacheble Machine de Google (<a href='https://teachablemachine.withgoogle.com/' target='_blank' class='url'>teachablemachine</a>).</p>
+                        <p>Para esto, se ingresó en la aplicación un Dataset que contenía aproximadamente 1400 imágenes subdivididas en dos categorías: rostros con máscara y rostros sin máscara. De esta forma, el software de Google nos dio como resultado un conjunto de archivos .py que contienen los algoritmos que clasifican una imagen dada, según las características de la misma. </p>
+                        <h3 id='capa-de-presentación'><strong>Capa de Presentación</strong></h3>
+                        <p>Para la presentación se hizo uso de la biblioteca gráfica TKinter, utilizando el paradigma orientado a objetos que permite la misma. El uso de esta biblioteca tiene que ver con la sencillez de la interfaz que provee. De esta manera, se puede integrar correctamente a OpenCV sin consumir demasiados recursos gráficos, altamente necesarios en el caso de esta aplicación, ya que muestra videos a tiempo real. </p>
+                        <h2 id='operaciones-de-la-capa-de-negocio'>Operaciones de la capa de negocio</h2>
+                        <ul>
+                        <li><p>Cuando el usuario inicia la cámara (luego de clickear el botón iniciar), el sistema buscará rostros en la imagen de video. Para esto, actuará la librería de Python llamada ‘face_recognition’ realizando las siguientes operaciones <a href='#ftn'>1</a>:</p>
+                        <ol start='' >
+                        <li>Se convierte la imagen de color a blanco y negro, dado que no se necesita color para encontrar rostros. </li>
+                        <li>Se observa cada uno de los pixeles de la imagen, junto con los que lo rodean. De esta forma, podemos darnos cuenta de qué tan oscuro es el píxel actual comparándolo con los que están a su alrededor. </li>
+                        <li>Luego se traza un vector (llamado gradiente) que indica en qué dirección la imagen se vuelve más oscura. </li>
+                        <li>Se repiten los pasos 2 y 3 para cada píxel de la imagen, reemplazando cada píxel por su gradiente. </li>
+                        <li>Dado que guardar el gradiente de cada uno de los píxeles nos devolvería demasiada calidad, la cual es innecesaria, se divide la imagen en pequeños cuadrados de 16x16 píxeles cada una. </li>
+                        <li>En cada cuadrado, se cuentan cuántos gradientes apuntan en cada dirección (cuantos apuntan hacia arriba, hacia arriba a la derecha, a la derecha, etc.) </li>
+                        <li>Se reemplaza ese cuadrado en la imagen con los gradientes direccionados más fuertes, construyendo un HOG (Histogram of Oriented Gradients). </li>
+                        <li>El HOG indica la localización de los límites del rostro en la imagen. </li>
+
+                        </ol>
+                        </li>
+                        <li><p>Una vez localizado el rostro, el sistema tomará una captura del video y guardará la imagen capturada en una carpeta llamada ‘imagenes’ con el nombre ‘Frame’ en formato .jpg </p>
+                        </li>
+                        <li><p>La ruta ./imágenes/Frame.jpg será enviada a la función ‘detect_mask’ el cual detectará si el rostro reconocido está utilizando cubrebocas o no, devolviendo las predicciones realizadas, siguiendo los pasos:</p>
+                        <ol start='' >
+                        <li>Se crea un array del tamaño correcto para alimentar el modelo entrenado.</li>
+                        <li>Se normaliza la imagen, llevándola al tamaño definido sin causar distorsiones en ella.</li>
+                        <li>La imagen normalizada se inserta en el array, y se envía al modelo entrenado, para que el motor de inferencia realice sus predicciones.</li>
+
+                        </ol>
+                        </li>
+                        <li><p>De acuerdo a los números devueltos en las predicciones, se utilizará el color verde para indicar que la persona está haciendo uso de la máscara cuando esta sea mayor al 60% en su categoría. Caso contrario, se utilizará el color rojo para indicar que la persona no está haciendo uso de la máscara.</p>
+                        </li>
+                        <li><p>En la ventana de video, se mostrará el video a tiempo real, indicando la localización del rostro con un rectángulo del color definido a partir de la regla anterior, en conjunto con un texto sobre el video que indique si la persona tiene máscara o no y su porcentaje de predicción.</p>
+                        </li>
+                        <li><p>En una sección debajo de la ventana de video se mostrará un mensaje que diga ‘Acceso permitido’ en verde o ‘Acceso denegado’ en rojo según la correspondiente predicción. Es decir, si la persona está haciendo uso de la máscara, se referirá al primer caso y si no lo está haciendo, se referirá al segundo. </p>
+                        </li>
+                        <li><p>El estado será guardado en la base de datos si cumple con alguna de las siguientes condiciones:</p>
+                        <ul>
+                        <li>El último estado guardado es distinto al estado actual (es decir se guardó un estado ‘sin_mascara’ y el estado actual es ‘con_mascara’ o viceversa) y pasaron más de 5 segundos desde que se registró el estado anterior. </li>
+                        <li>El último estado guardado fue registrado hace más de 30 segundos. </li>
+
+                        </ul>
+                        </li>
+                        <li><p>Los datos de la sesión actual serán contados desde el tiempo en que se inicia la aplicación hasta que se finaliza, independientemente si se cerró la ventana de video. </p>
+                        </li>
+                        <li><p>Las estadísticas del mes mostrarán la suma de los datos por categoría de los últimos 30 días, finalizando en el día anterior a la fecha actual.</p>
+                        </li>
+                        <li><p>Las estadísticas de la semana mostrarán la suma de los datos por categoría a partir del último lunes previo a la fecha actual, independientemente del día de la semana en que se encuentre. </p>
+                        </li>
+
+                        </ul>
+                        <h2 id='capturas-de-pantalla'>Capturas de pantalla</h2>
+                        <p><img class="img-fluid mx-auto d-block" src="../assets/images/FaceMask Detector/image1.png" alt="captura1" style="zoom: 30%;" /></p>
+                        <p><img class="img-fluid mx-auto d-block" src="../assets/images/FaceMask Detector/image3.png" alt="captura2" style="zoom: 35%;" /></p>
+                        <p>&nbsp;</p>
+                        <p><img class="img-fluid mx-auto d-block" src="../assets/images/FaceMask Detector/image2.png" alt="captura4" style="zoom: 35%;" /></p>
+                        <hr />
+                        <p><a href='#ftn'>1</a> Machine Learning is Fun! Part 4: Modern Face Recognition with Deep Learning (<a href='https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78' target='_blank' class='url'>https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78</a>)</p>
+                        <p> </p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer-->
+        
+        <footer class="border-top" id="contactme">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <h4 class="mb-3"><i>Contacto</i></h4>
+
+                            <li class="list-inline-item">
+                                <a href="mailto:camvives@gmail.com">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://t.me/camvives">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa-brands fa-telegram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/camvives">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Camila Vives - 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Camila Vives - Página Personal</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+                       <!-- Back to top button -->
+                <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <script>
+                    //Get the button
+                    let mybutton = document.getElementById("btn-back-to-top");
+        
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function () {
+                    scrollFunction();
+                    };
+        
+                    function scrollFunction() {
+                    if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                    ) {
+                    mybutton.style.display = "block";
+                    } else {
+                    mybutton.style.display = "none";
+                    }
+                    }
+                    // When the user clicks on the button, scroll to the top of the document
+                    mybutton.addEventListener("click", backToTop);
+        
+                    function backToTop() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                    }
+                </script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Camvives</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#contactme">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/aca-cover.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Academia</h1>
+                            
+                            <h2 class="subheading">Este proyecto consiste en un sistema de gestión académica (SGA) que permite administrar distintas actividades dentro de la Universidad.</h2>
+                            <a href="https://github.com/camvives/Academia">
+                                <button type="button" class=" btn-md btn-outline-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github " viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg>
+                                    Ver código en Github
+                                </button>
+                            </a>
+                            <span class="meta mt-3">
+                                <p class="text-black-80 ">
+                                    Tecnologías: .Net Framework - SQL Server - SAP Crystal Reports
+                                  </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-15 col-lg-8 col-xl-10">
+                      <h2>Descripción del sistema</h2>
+                        <p>Academia es un sistema de gestión académica (SGA) que permite administrar y registrar distintas 
+                            actividades de gestión realizadas por administradores, docentes y alumnos dentro de la 
+                            Universidad. El sistema se divide en módulos, que contienen distintas funcionalidades, a los que 
+                            los usuarios tendrán acceso según su categoría. </p>
+                            <p>Funcionalidades para Administradores:</p>
+                            <ul>
+                                <li>Creación, Modificación, Eliminación y Consulta de Usuarios.</li>
+                                <li>Creación, Modificación, Eliminación y Consulta de Cursos.</li>
+                                <li>Creación, Modificación, Eliminación y Consulta de Especialidades.</li>
+                                <li>Creación, Modificación, Eliminación y Consulta de Planes.</li>
+                                <li>Creación, Modificación, Eliminación y Consulta de Materias.</li>
+                                <li>Creación, Modificación, Eliminación y Consulta de Cursos.</li>
+                                <li>Asignación de Docentes a Cursos</li>
+                            </ul>
+                            <p>Funcionalidades para Docentes:</p>
+                            <ul>
+                                <li>Consulta y modificación de sus datos personales.</li>
+                                <li>Consulta de cursos a los que fue asignado.</li>
+                                <li>Consulta de alumnos inscriptos en los cursos a los que fue asignado.</li>
+                                <li>Registro de condiciones académicas de los inscriptos a los cursos en los que fue asignado.</li>
+                            </ul>
+                            <p>Funcionalidades para Alumnos:</p>
+                            <ul>
+                                <li>Consulta y modificación de sus datos personales.</li>
+                                <li>Consulta de su estado académico.</li>
+                                <li>Inscripción a cursos.</li>
+                            </ul>
+                        <h2>Capas</h2>
+                        <p>La aplicación está organizada en una arquitectura de 3 capas: Capa de Presentación (UI.Desktop  y UI.Web), Capa de Negocio (Business.Logic) y Capa de Datos (Data.Database). </p>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Academia/image-006.png" alt="Esquema de capas" style="zoom:60%;" /></p>
+                        <p>Además, estas capas se complementan con componentes transversales (Business Entities y Util), los cuales facilitan la reutilización de código. Dentro del componente de entidades se 
+                            encuentran definidos todos los objetos 
+                            representativos de las tablas de la base de datos 
+                            que se utilizaron en la aplicación. 
+                            El proyecto Util contiene una clase denominada Validaciones, que contiene funciones comunes 
+                            reutilizables, que se usan repetidamente en las capas de negocio y de presentación. 
+                        </p>
+                        <h2>Modelo de objetos</h2>
+                        <p>Todas las entidades creadas y utilizadas en el sistema se representan mediante el siguiente 
+                            diagrama de clases, generado automáticamente por Visual Studio.</p>
+                            <img class="img-fluid mx-auto d-block" src="../assets/images/Academia/image-007.jpg" alt="Esquema de objetos" style="zoom:60%;" /></p>    
+                        <h2>Modelo de datos</h2>
+                        <p>Las entidades del sistema persisten sus datos en una base de datos relacional, cuya estructura se 
+                            presenta en el siguiente modelo de datos. </p>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Academia/image-008.png" alt="Esquema de objetos" style="zoom:60%;" /></p>    
+                        <h2>Tecnologías utilizadas</h2>
+                        <h4>Motor de base de datos</h4>
+                        <p>Para persistir los datos del sistema, se hace uso de SQL Server Express en su versión 2018. </p>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Academia/image-009.jpg"  style="zoom:45%;" /></p>
+                        <p>Microsoft SQL Server es un sistema de gestión de base de datos relacional (RDBMS) 
+                            producido por Microsoft. Su principal lenguaje de consulta es Transact-SQL, una aplicación de 
+                            las normas ANSI / ISO estándar Structured Query Language (SQL).</p>
+                        <h4>Entorno de Desarrollo Integrado (IDE)</h4>
+                        <p>El IDE utilizado para desarrollar el sistema fue “Visual Studio Community 2019”.</p>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Academia/image-010.jpg"  style="zoom:70%;" /></p>
+                        <p>Visual Studio es un conjunto completo de herramientas de desarrollo para la generación 
+                            de aplicaciones web ASP.NET, Servicios Web XML, aplicaciones de escritorio y aplicaciones 
+                            móviles. Visual Basic, Visual C# y Visual C++ utilizan el mismo entorno de desarrollo integrado 
+                            (IDE), que habilita el uso compartido de herramientas y facilita la creación de soluciones en varios 
+                            lenguajes.</p>
+                        <h4>Framework</h4>
+                        <p>El Framework en el que se ha desarrollado la aplicación es Microsoft .NET Framework 4.7.2 para 
+                            Windows.
+                            </p>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Academia/image-011.jpg"  style="zoom:45%;" /></p>
+                        <p>.NET Framework es un entorno de ejecución administrado para Windows que proporciona 
+                            diversos servicios a las aplicaciones en ejecución. Incorpora Common Language Runtime, que 
+                            proporciona la administración de la memoria y otros servicios del sistema, y una biblioteca de 
+                            clases completa, que permite a los programadores aprovechar el código estable y fiable de todas 
+                            las áreas principales del desarrollo de aplicaciones.</p>
+                        <h4>Motor de Reportes</h4>
+                        <p>El motor de reportes que se utiliza para generar los certificados de inscripción es SAP Crystal 
+                            Reports, versión para Visual Studio 2019. </p>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Academia/image-012.jpg"  style="zoom:45%;" /></p>
+                        <p>Crystal Reports es una herramienta potente y a la vez fácil de usar para el diseño y generación de 
+                            informes a partir de datos almacenados en una base de datos u otra fuente de información.</p>
+                        <h4>Hojas de estilo</h4>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Academia/image-013.jpg"  style="zoom:45%;" /></p>
+                        <p>CSS (Cascading Style Sheets), es un lenguaje de diseño gráfico para definir y crear la presentación 
+                            de documentos HTML. Describe la forma en la que debe mostrarse cada uno de los controles de 
+                            los Web Forms creados.</p>
+                        <h2>Capturas de pantalla</h2>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-015.jpg"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">LogIn (Escritorio)</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-016.jpg"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">Administración de Cursos (Administradores)</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-017.png"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">Consulta de Estado Académico (Alumnos)</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-018.png"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">Inscripción a Cursos (Alumnos) </figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-019.jpg"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">Administración de condiciones académicas (Docentes)  </figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-020.jpg"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">LogIn (Web)  </figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-021.jpg"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">Consulta de Estado Académico Alumnos (Docentes)</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-022.jpg"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">Consulta de Datos del Usuario (Administradores)</figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-022.jpg"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">Modificación de Datos Personales (Docentes y Alumnos)
+                            </figcaption>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Academia/image-023.jpg"  style="zoom:50%;" /></p>
+                            <figcaption class="figure-caption">Inscripción a Cursos (Alumnos) 
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer-->
+        
+        <footer class="border-top" id="contactme">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <h4 class="mb-3"><i>Contacto</i></h4>
+
+                            <li class="list-inline-item">
+                                <a href="mailto:camvives@gmail.com">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://t.me/camvives">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa-brands fa-telegram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/camvives">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Camila Vives - 2022 || Photo by <a href="https://unsplash.com/@shubhamsharan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shubham Sharan</a> on <a href="https://unsplash.com/s/photos/university?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

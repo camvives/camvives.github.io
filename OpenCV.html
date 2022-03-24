@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Camila Vives - Página Personal</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script>
+            //Get the button
+            let mybutton = document.getElementById("btn-back-to-top");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+            scrollFunction();
+            };
+
+            function scrollFunction() {
+            if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+            ) {
+            mybutton.style.display = "block";
+            } else {
+            mybutton.style.display = "none";
+            }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            mybutton.addEventListener("click", backToTop);
+
+            function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Camvives</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#contactme">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/cin-cover.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-9">
+                        <div class="post-heading">
+                            <h1>Introducción a OpenCV con Python</h1>
+                            
+                            <h5> Autores: <a style="color: azure" href="https://github.com/Fabriziogilio">Fabrizio Gilio</a> y <a style="color: azure" href="https://github.com/camvives">Camila Vives</a></h5>
+                            
+                            <span class="meta mt-3">
+                                <p class="text-black-80 ">
+                                    Tecnologías: Python - OpenCV
+                                  </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-15 col-lg-8 col-xl-10">
+                        <h3>Índice</h3>
+                        <ul>
+                            <li><a href="#qué-es-opencv">¿Qué es OpenCV?</a>
+                              <ul>
+                                <li><a href="#links-de-utilidad">Links de utilidad</a></li>
+                                <li><a href="#usos-de-opencv">Usos de OpenCV</a>
+                                  <ul>
+                                    <li><a href="#deportes">Deportes</a></li>
+                                    <li><a href="#medicina">Medicina</a></li>
+                                    <li><a href="#trafico">Tráfico</a></li>
+                                    <li><a href="#reconocimiento-facial">Reconocimiento facial</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li><a href="#proceso-de-instalación">Proceso de instalación</a>
+                              <ul>
+                                <li><a href="#windows">Windows</a></li>
+                                <li><a href="#ubuntu">Ubuntu</a></li>
+                                <li><a href="#fedora">Fedora</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#procesamiento-de-imágenes">Procesamiento de imágenes</a>
+                              <ul>
+                                <li><a href="#qué-es-una-imagen-digital">¿Qué es una imagen digital?</a></li>
+                                <li><a href="#almacenamiento-de-pixels">Almacenamiento de Pixels</a>
+                                  <ul>
+                                    <li><a href="#rgb">RGB</a></li>
+                                    <li><a href="#hls-y-hsv">HLS y HSV</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li><a href="#ejemplos">Ejemplos</a>
+                              <ul>
+                                <li><a href="#ejemplo-1---dónde-está-wally">Ejemplo 1 - ¿Dónde está Wally?</a>
+                                  <ul>
+                                    <li><a href="#código">Código</a></li>
+                                  </ul>
+                                </li>
+                                <li><a href="#ejemplo-2---filtros-en-cámara-web">Ejemplo 2 - Filtros en Cámara Web</a>
+                                  <ul>
+                                    <li><a href="#código-1">Código</a></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li><a href="#recursos-adicionales">Recursos Adicionales</a></li>
+                            <li><a href="#referencias">Referencias</a></li>
+                          </ul>
+                          
+                          <p><small><i><a href="http://ecotrust-canada.github.io/markdown-toc/">Table of contents generated with markdown-toc</a></i></small></p>
+                          
+                          <h2 id="qué-es-opencv">¿Qué es OpenCV?</h2>
+                          
+                          <p style="text-align: justify;"> 
+                          OpenCV (Open Source Computer Vision Library) es una librería de código abierto multiplataforma, construida con el objetivo de proveer una infraestructura común para aplicaciones de <i>visión artificial</i>, y para acelerar el uso de <i>machine perception</i> en productos comerciales. 
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          La visión artificial (también conocida como computer vision), se trata de una disciplina que provee métodos para adquirir, procesar, analizar y comprender imágenes del mundo real. De esta manera, la visión artificial intenta reproducir en las computadoras la forma en la que los humanos vemos el mundo que nos rodea. 
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          El machine perception es entonces, la capacidad de un sistema de computación de interpretar los datos que se obtienen a través de computer vision, computer audition, machine touch o machine olfaction. El objetivo final de este campo es que la interpretación sea similar a la forma en la que los humanos usan sus sentidos para ver el mundo que los rodea.
+                          </p>
+                          
+                          <h3 id="links-de-utilidad">Links de utilidad</h3>
+                          <ul>
+                            <li>
+                              <p>Página principal: <a href="https://opencv.org">https://opencv.org</a></p>
+                            </li>
+                            <li>
+                              <p>Repositorio en Github: <a href="https://github.com/opencv/opencv">https://github.com/opencv/opencv</a></p>
+                            </li>
+                            <li>
+                              <p>Documentación: <a href="https://docs.opencv.org/master/">https://docs.opencv.org/master/</a></p>
+                            </li>
+                            <li>
+                              <p>Foro Q&amp;A: <a href="https://forum.opencv.org">https://forum.opencv.org</a></p>
+                            </li>
+                            <li>
+                              <p>Repositorio con funcionalidades extra: <a href="https://github.com/opencv/opencv_contrib">https://github.com/opencv/opencv_contrib</a></p>
+                            </li>
+                          </ul>
+                          
+                          <h3 id="usos-de-opencv">Usos de OpenCV</h3>
+                          <p style="text-align: justify;">La visión artificial se puede utilizar para un sinfin de aplicaciones que pueden tanto mejorar la eficiencia de las personas en sus trabajos, como crear nuevas formas de observar situaciones y obtener rápidas mediciones que puedan ayudar a resolver problemas. A continuación se nombrarán algunos ejemplos de proyectos en los que se utiliza OpenCV como base para lograr los objetivos de visión artificial. </p>
+                          
+                          <h4 id="deportes">Deportes</h4>
+                          <p style="text-align: justify;"> La idea de realizar un seguimiento de los deportistas dentro del campo de juego suele ser muy útil para obtener especificaciones de su rendimiento, ya sea individualmente o en equipo.  Con el uso de OpenCV se pueden pensar varios objetivos de visión artificial a lograr, entre ellos:
+                          </p>
+                          
+                          <ul>
+                            <li>El seguimiento de los jugadores por equipo, para evaluar por ejemplo, el nivel de esfuerzo físico, la velocidad de reacción, la cantidad de pases, etc.</li>
+                            <li>La representación de la cancha en tiempo real, lo cual permite crear estrategias de juego, de acuerdo a la posición de los jugadores y sus rivales.</li>
+                            <li>La detección de acciones de juego etiquetando cada movimiento, de forma que se puedan obtener estadísticas de cantidad de tiros, tiros sin aciertos o pases dados, entre otras medidas.</li>
+                            <li>El Análisis del movimiento corporal, que es útil para deportes en los cuales existen riesgos de sufrir lesiones por un movimiento mal realizado.</li>
+                          </ul>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://blogs.nvidia.com/wp-content/uploads/2017/07/StanfordAI-768x432.png" style="zoom: 70%;" />
+                          </center>
+                          <center>
+                          Fuente: 
+                          <a href="https://blogs.nvidia.com/blog/2017/07/23/future-of-computer-vision/"> blogs.nvidia.com </a>
+                          </center>
+                          
+                          <h4 id="medicina">Medicina</h4>
+                          <p style="text-align: justify;">
+                          En el área de Medicina, la visión artificial se puede utilizar a través de la funcionalidad de detección de objetos, formas y colores, para analizar casos médicos que conlleven cierta complejidad.
+                          Por ejemplo, en un <a href="https://www.semanticscholar.org/paper/Boundary-Detection-Algorithm-For-Brain-Tumor-And-Raj-Kumaresan/5a5ddad9d3c99bc1a986e69838ae0ffa9d9c3d17"> Paper publicado por World Journal of Engineering Research and Technology India</a>, se realizó un estudio del uso de OpenCV para la ayuda en la detección de la posición y área de tumores cerebrales.
+                          </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block"  class="img-fluid mx-auto d-block" src="/assets/images/opencv/brain_tumor.png" style="zoom: 70%;" />
+                          </center>
+                          <center>
+                          Ghule, Pournima, "Content-Based Image Retreival for Detecting Brain Tumors and Amyloid Fluid Presence"
+                          (2014). 
+                          <a href="https://scholarworks.gvsu.edu/cistechlib/194">Technical Library. 194. </a>
+                          </center>
+                          
+                          <p style="text-align: justify; padding-top:1em;">
+                          En el trabajo publicado, se explica que las tomografías y resonancias magnéticas producen una imagen completa del cerebro, que por lo  general, es analizada visualmente por el médico. Sin embargo, este método tiene un resultado menos preciso en la detección y el tamaño del tumor. Al utilizar en un método asistido por computadora y un sistema integrado para la detección de tejido tumoral cerebral, aumenta la precisión en comparación con otras detecciones. Además se tiene la ventaja de que se reduce el tiempo de análisis para la detección del tumor. </p>
+                          
+                          <h4 id="tráfico">Tráfico</h4>
+                          <p style="text-align: justify;">La visión artificial puede ser muy útil tanto para el tráfico vehicular como el tráfico peatonal. Tal como en las aplicaciones anteriores, su utilidad se basa especialmente en la obtención de métricas que permitan sacar conclusiones estadísticas. </p>
+                          
+                          <p style="text-align: justify;"> En cuanto al tránsito de vehículos, una de las aplicaciones de OpenCV se basa en el control del flujo de tránsito. Es decir, detectar la cantidad de autos que se encuentran circulando y clasificarlos según distintas características como tipo, dirección en la que circulan, color o modelo para luego tomar decisiones sobre esa información. Además el mismo sistema de detección podría utilizarse para calcular la velocidad a la que transitan, de forma que se puedan descubrir infracciones o casos en los que haya vehículos detenidos en medio de la calle. Agregado a esto, si existieran infracciones, OpenCV podría utilizarse también para reconocer la patente y registrarla.</p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://visionintelligence.ai/images/Traffic-Signal-Violation.jpg" style="zoom: 50%;" />
+                          </center>
+                          <center>
+                          Fuente 
+                          <a href="https://visionintelligence.ai/">VisionIntelligence.ai</a>
+                          </center>
+                          
+                          <p style="text-align: justify;">
+                          Al igual que con el tránsito vehicular, se puede hacer un análisis del flujo del tráfico de peatones. En un proyecto desarrollado por la empresa Placemeter, se utilizaba visión artificial para rastrear el movimiento de las calles de Nueva York, de forma que los locales de venta pudieran tener estadísticas de cuántos peatones pasaban por delante de sus tiendas e incluso cuántos ingresaban a ellas.</p>
+                          
+                          <center>
+                          <iframe title="vimeo-player" src="https://player.vimeo.com/video/69091237?h=03257e6f48" frameborder="0"></iframe>
+                          </center>
+                          
+                          <h4 id="reconocimiento-facial">Reconocimiento facial</h4>
+                          <p style="text-align: justify;">Por último, pero quizás de lo más interesante, OpenCV nos permite hacer uso del reconocimiento facial. Es decir, no sólo se reconoce que hay una persona en la imagen, sino que podemos decir quién es esa persona.Esto tiene una amplia variedad de usos, entre los cuales se pueden nombrar el permitir acceso o no a ciertos lugares, la toma de asistencia en ámbitos académicos o empresariales, o el inicio sesión en alguna cuenta de un dispositivo, entre otras. </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block"src="https://www.pyimagesearch.com/wp-content/uploads/2018/06/face_recognition_opencv_example_02.jpg" style="zoom: 70%;" />
+                          </center>
+                          <center>
+                          Adrian Rosebrock en 
+                          <a href="https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning">pyimagesearch</a>
+                          </center>
+                          
+                          <p style="text-align: justify;">A modo de ejemplo, en los aeropuertos de China existen puestos de “ayuda” (al día de hoy incluso algunos son robots que circulan por el establecimiento), que a partir del reconocimiento del rostro de la persona, permite informarle cuál es su vuelo, el horario y la puerta de abordaje. Además, en otros países como Estados Unidos o España también se utiliza el reconocimiento facial para hacer el check-in. </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://globalnews.ca/wp-content/uploads/2018/10/19695244.jpg?w=2048" style="zoom: 17%;" />
+                          </center>
+                          <center>
+                          Fuente:
+                          <a href="https://globalnews.ca/news/4567183/facial-recognition-technology-u-s-airports/">Global News</a>
+                          </center>
+                          
+                          <h2 id="proceso-de-instalación">Proceso de instalación</h2>
+                          <h3 id="windows">Windows</h3>
+                          <p style="text-align: justify;">
+                          La forma más simple de instalar la librería OpenCV en Windows es a través de un wrapper package (no oficial) construido con paquetes pre-compilados para Python, usando la herramienta <code>pip</code>. 
+                          </p>
+                          <p>El proceso es entonces el siguiente:</p>
+                          
+                          <ol>
+                          <li style="padding-top:1em; padding-bottom:0.5em"> En primer lugar, comprobamos que la versión de Python es mayor a 3.6.X (Septiembre de 2021) con <code>python -V </code> o <code>python --version</code></li>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/Picture1.png" />
+                          </center>
+                          
+                          <li style="padding-top:1em; padding-bottom:0.5em">(Opcional) Creamos un entorno virtual con <code>python -m venv [nombre_entorno]</code> y lo activamos con <code>[nombre_entorno]\Scripts\activate.bat</code>
+                          
+                          Esto sirve para que no colisionen las dependencias de paquetes y las versiones y además para ver qué otros paquetes instala OpenCV </li>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/Picture2.png" />
+                          </center>
+                          
+                          <li style="padding-top:1em; padding-bottom:0.5em">Para ver los paquetes del entorno utilizamos <code>pip list</code></li>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/Picture3.png" />
+                          </center>
+                          
+                          <li style="padding-top:1em; padding-bottom:0.5em">Instalamos OpenCV con el comando <code>pip install opencv-python</code>. OpenCV requiere de la librería numpy, por eso la va a instalar automáticamente</li>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/Picture4.png" />
+                          </center>
+                          
+                          <li style="padding-top:1em; padding-bottom:0.5em">Verificamos los nuevos paquetes instalados, utilizando nuevamente <code>pip list</code></li>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/Picture5.png" style="zoom: 85%;" />
+                          </center>
+                          
+                          
+                          <li style="padding-top:1em; padding-bottom:0.5em">Comprobamos que se haya instalado correctamente: iniciamos la consola de python con el comando <code>python</code>, importamos OpenCV con <code>import cv2 as cv</code> e imprimimos la versión con <code>print(cv.__version__)</code></li>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/Picture6.png" style="zoom: 85%;" />
+                          </center>
+                          
+                          <li style="padding-top:1em; padding-bottom:0.5em"> (Recomendado) Instalar la librería matplotlib a través de <code>pip install matplotlib</code>. Este paso no es obligatorio, pero muchas de las funciones que se usan en OpenCV se pueden simplificar usando funciones de esa librería </li>
+                          </ol>
+                          
+                          <h3 id="ubuntu">Ubuntu</h3>
+                          <p>De la misma forma que en Windows, OpenCV puede ser instalado en Ubuntu a partir de paquetes pre-compilados.</p>
+                          
+                          <p>Para instalarlo, utilizamos el siguiente comando en la terminal (como usuario root):</p>
+                          
+                          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install python3-opencv
+                          </code></pre></div></div>
+                          
+                          <p>Luego, abrimos el IDLE de Python y comprobamos que se haya instalado correctamente:</p>
+                          
+                          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import cv2 as cv
+                          print(cv.__version__)
+                          </code></pre></div></div>
+                          <p>Si el resultado de la version actual se imprime sin ningún error, quiere decir que se ha instalado correctamente.</p>
+                          
+                          <h3 id="fedora">Fedora</h3>
+                          <p>Para el sistema operativo Fedora, los paquetes pre-compilados de OpenCV se instalan a través del siguiente comando:</p>
+                          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ yum install numpy opencv*
+                          </code></pre></div></div>
+                          <p>Luego, abrimos el IDLE de Python y comprobamos que se haya instalado correctamente:</p>
+                          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import cv2 as cv
+                          &gt;&gt;&gt; print(cv.__version__)
+                          </code></pre></div></div>
+                          <p>Si el resultado de la version actual se imprime sin ningún error, quiere decir que se ha instalado correctamente.</p>
+                          
+                          <h2 id="procesamiento-de-imágenes">Procesamiento de imágenes</h2>
+                          <h3 id="qué-es-una-imagen-digital">¿Qué es una imagen digital?</h3>
+                          
+                          <p style="text-align: justify;">
+                          Antes de comenzar a hablar de procesamiento de imágenes, debemos saber exactamente qué es una imagen digital. Existen múltiples formas de obtener imágenes digitales: sacando una foto con un smartphone, creándola con alguna herramienta de software, escaneándola, o bien, a través de procesos más complejos como lo pueden ser las tomografías computadas o las resonancias magnéticas. 
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          De cualquier forma, mientras nosotros (los humanos) vemos una representación gráfica, los dispositivos que capturan la imagen la almacenan como una gran matriz de dos dimensiones, formada por valores numéricos que representan cada uno de los puntos que se encuentran en ella. Los elementos que conforman la matriz son llamados <i>Picture Elements</i>, <i>Image Elements</i>, o simplemente <i>Pixels</i>.
+                          </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://docs.opencv.org/master/MatBasicImageForComputer.jpg" />
+                          </center>
+                          <center>
+                          Fuente:
+                          <a href="https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html">OpenCV</a>
+                          </center>
+                          
+                          <p style="text-align: justify;">
+                          A modo de ejemplo, en la imagen de arriba se puede ver que el espejo del auto no es más que una matriz que contiene el nivel de intensidad de cada pixel. 
+                          </p>
+                          
+                          <h3 id="almacenamiento-de-pixels">Almacenamiento de Pixels</h3>
+                          <p style="text-align: justify;">
+                          La forma de almacenar los pixels varía según las necesidades del problema que se quiera resolver. 
+                          Como se mencionó anteriormente, cada uno de ellos contendrá el color o la intensidad de color de la imagen. 
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          En el caso de las imagenes que se encuentran en escala de grises (<i>grayscale</i>), el color final se logra a través de un sólo valor por pixel que indica la información de intensidad, o dicho de otra manera, la cantidad de luz que contiene cada elemento de la imagen. Por lo tanto, los únicos colores que serán visibles son el blanco y el negro, teniendo como opción la combinación de ellos para permitirnos crear distintas tonalidades de gris.
+                          </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Grayscale_8bits_palette_sample_image.png" />
+                          </center>
+                          <center>
+                          <a href="https://commons.wikimedia.org/wiki/File:Grayscale_8bits_palette_sample_image.png">Ricardo Cancho Niemietz</a>, Public domain, via Wikimedia Commons
+                          </center>
+                          
+                          <p style="text-align: justify;">
+                          Por otro lado, para poder obtener imágenes a color, existen diferentes métodos, donde cada uno de ellos divide los pixels en tres o cuatro componentes básicos. 
+                          De esta forma, para representar al color que contendrá cada pixel, en lugar de contar con una sola matriz bidimensional, se tiene una colección de tres o cuatro matrices bidimensionales las cuales a su vez contienen valores numéricos que indican la intensidad.
+                          </p>
+                          
+                          <h4 id="rgb">RGB</h4>
+                          
+                          <p style="text-align: justify;">
+                          El más popular de los métodos es el <i>RGB</i> dado que esa es la forma en la que nuestros ojos construyen los colores. En este caso particular, los componentes básicos son rojo, verde y azul y en ocasiones se agrega un cuarto elemento (alpha) que es la transparencia. 
+                          </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://e2eml.school/images/image_processing/three_d_array.png" style="zoom: 35%;" />
+                          </center>
+                          <center>
+                          Fuente:
+                          <a href="https://e2eml.school/convert_rgb_to_grayscale.html">e2eml.school</a>
+                          </center>
+                          
+                          <p style="text-align: justify;">
+                          Cada una de las matrices que representan a los elementos rojo, verde y azul se llaman canales. Si la imagen RGB es de 24 bits (estándar actual), cada canal tiene 8 bits. Esto quiere decir que la imagen final está compuesta de tres imágenes, una por cada canal, donde cada sub-imagen puede almacenar pixels discretos con una intensidad medida con valores numéricos en el rango de 0 y 255. 
+                          </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Beyoglu_4671_tricolor.png/800px-Beyoglu_4671_tricolor.png" style="zoom: 50%;" />
+                          </center>
+                          <center>
+                          <a href="https://commons.wikimedia.org/wiki/File:Beyoglu_4671_tricolor.png">© Nevit Dilmen</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+                          </center>
+                          
+                          <p style="text-align: justify;">
+                          Esto quiere decir que partiendo de las tres imágenes en escala de grises de los canales, se puede construir una imagen a color. Por ejemplo, en la figura superior, la columna de la derecha muestra los canales aislados en escalas de grises, mientras que en la columna de la izquierda se encuentran su equivalencia en colores naturales. Por último se muestra la combinación de dichas sub-imagenes.
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          Algo que es importante mencionar es que la operación inversa también es posible: a partir de la imagen a color, se pueden obtener las imágenes en escala de grises de cada uno de los canales. Si se manejan los canales (tanto separados como en conjunto) con diferentes técnicas, se consiguen distintos resultados de efectos artisticos, los cuales son comunmente llamados <i>filtros</i>. 
+                          </p>
+                          
+                          <h4 id="hls-y-hsv">HLS y HSV</h4>
+                          <p style="text-align: justify;">
+                          El espacio de colores HSL fue inventado en 1938 por Georges Valensi, un ingeniero de telecomunicaciones francés, que lo que buscaba era un método para añadir color a la forma existente de codificación monocrómica utilizada para transmitir video, dado que sólo tenían la componente de luminancia. Con esto, la cadena de televisión emisora podía enviar imágenes a color y los receptores que aún contaban con dispositivos monocromáticos podían recibir "colores" traducidos en blanco y negro, sin modificar las señales transmitidas. 
+                          </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://i.insider.com/604bba8910c8760018b92fcc?width=700&amp;format=jpeg&amp;auto=webp" style="zoom: 45%;" />
+                          
+                          
+                          <img  class="img-fluid mx-auto d-block" src="https://i.insider.com/604bba6bfea127001886a814?width=700&amp;format=jpeg&amp;auto=webpg" style="zoom: 41.5%;" />
+                          </center>
+                          <center>
+                          Marvel Studios/Disney Plus
+                          </center>
+                          
+                          <p style="text-align: justify;">
+                          Ahora, volviendo a lo digital, a pesar de que la mayoría de los dispositivos producen colores con la combinación RGB, la relación entre la cantidad de rojo, verde y azul y el color resultante no es intuitiva. Por este motivo, se intentó buscar una forma de representar el color que tenga que ver con la manera en la que los artistas lo creaban, es decir a través de distintas tinturas y sombras. 
+                          Este tipo de representación del color, llamada HSV, fue creada en los años 70 por el ingeniero norteamericano Alvy Ray Smith, el cual fue uno de los fundadores de PIXAR y de la división de computación en Lucasfilm. Para poder construirlo tomó como base al modelo HSL mencionado anteriormente, y de ahí vienen las similitudes entre ambos.
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          A diferencia del modelo RGB que es cúbico, los modelos HSV y HLS son cilíndricos. Al ser de esta forma, los colores se definen a través de dimensiones angulares, teniendo en el eje vertical los colores neutros, acromáticos o grises. Tanto la representacion HLS como la HSV incluyen tres canales:
+                          </p>
+                          
+                          <ul>
+                            <li><u>Hue (Matiz o Tono)</u>, que representa a los colores digitales primarios (rojo, verde, azul) con todos los matices intermedios (naranjas, amarillos, violetas, entre otros).</li>
+                            <li><u>Saturation (Saturación)</u>, que indica la “cantidad de color”. Esto quiere decir que el valor mínimo de saturación para cualquier color es el gris, mientras que el máximo es el más “puro” o “intenso”.</li>
+                            <li><u>Value (Valor) en HLS o Lightness (Luminosidad) en HSV</u>, que mide la cantidad de luz. Cualquier color al aumentar su cantidad de luz tiende al blanco y al disminuirla, tiende al negro.</li>
+                          </ul>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/0/05/RGB_Cube_Show_lowgamma_cutout_a.png" style="zoom: 13%;" />
+                          
+                          <img  class="img-fluid mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/3/33/HSV_color_solid_cylinder_saturation_gray.png" style="zoom: 13%;" />
+                          
+                          <img  class="img-fluid mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/HSL_color_solid_cylinder_saturation_gray.png" style="zoom: 13%;" />
+                          </center>
+                          <center>
+                          <a href="https://commons.wikimedia.org/wiki/File:RGB_Cube_Show_lowgamma_cutout_b.png">SharkD</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+                          </center>
+                          
+                          <p style="text-align: justify;">
+                          Como puede verse en la figura, la principal diferencia entre HSV y HSL es que en HSL la saturación va del color puro al gris medio y en HSV la saturación va del color puro al blanco. Por otra parte, la cantidad de luz en HSL va desde el negro al blanco y en HSV va desde el negro al color intenso, el cual representa al color si se lo ilumina con una luz blanca.
+                          </p>
+                          
+                          <h2 id="ejemplos">Ejemplos</h2>
+                          <h3 id="ejemplo-1---dónde-está-wally">Ejemplo 1 - ¿Dónde está Wally?</h3>
+                          
+                          <p style="text-align: justify;">  ¿Dónde está Wally? es una serie de libros para niños creada por el ilustrador inglés Martin Handford. El juego que presentan los libros se basa en encontrar al personaje Wally, que está oculto dentro de una multitud de ilustraciones que representan a cientos de personas, objetos y animales haciendo cosas divertidas. 
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          En este ejemplo intentaremos que el programa escrito en Python con OpenCV, encuentre a Wally en una ilustración completa, teniendo previamente un recorte de lo que debe encontrar. Para esto vamos a proveer al programa con dos imágenes, una del escenario completo, a la cual se le llama <i>Source image</i> (I): 
+                          </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/where-is-wally.jpg" style="zoom: 7%;" />
+                          </center>
+                          <center>
+                          <a href="https://imgur.com/user/WhereWasWaldo">WhereWasWaldo</a> via Imgur
+                          </center>
+                          
+                          <p>y otra del recorte de Wally en el escenario, la cual es llamada <i>Template image</i> (T):</p>
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/Wally.jpg" style="zoom: 50%;" />
+                          </center>
+                          
+                          <p style="text-align: justify;">
+                          Para identificar la zona en las que ambas imágenes coinciden, OpenCV compara la imagen T contra la imagen I desplazándola. Es decir, la matriz de números de la imagen plantilla se compara pixel por pixel con la imagen fuente, y a través de una métrica se calcula que tan "buena" o "mala" es la comparación. 
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          En nuestro ejemplo, una vez que encuentre una comparación satisfactoria, marcará la zona en la que se encuentra Wally con un rectángulo.
+                          </p>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/wally_found.jpg" style="zoom: 50%;" />
+                          </center>
+                          
+                          <h4 id="código">Código</h4>
+                          
+                          <script src="https://gist.github.com/camvives/63d6a2373a687176d82131e2e7c6d8f0.js"></script>
+                          
+                          <h3 id="ejemplo-2---filtros-en-cámara-web">Ejemplo 2 - Filtros en Cámara Web</h3>
+                          <p style="text-align: justify;">
+                          En este segundo ejemplo haremos uso de la cámara web, y aplicaremos distintos filtros a la imagen que se está capturando a tiempo real. Para que puedan verse todos los filtros a la vez crearemos una ventana dividida en cuatro porciones en las que se reproduzca la misma imagen.
+                          </p>
+                          
+                          <p style="text-align: justify;">
+                          El siguiente paso será aplicar filtros que provee OpenCV a tres de las cuatro porciones de la ventana, manteniendo en una la imagen original. En este caso aplicaremos los siguientes filtros:
+                          </p>
+                          <ol>
+                          <li><u>Desenfoque gaussiano:</u> es un efecto de suavizado, en donde se mezclan ligeramente los colores de los pixels, lo que provoca que la imagen pierda detalle y se vea menos nítida.</li>
+                          <li><u>Filtro Laplaciano:</u> este filtro destaca las regiones de la imagen que tienen un rápido cambio en sus pixels, lo cual se da generalmente en los bordes de los objetos que se encuentran en la imagen.</li>
+                          <li><u>Cambio de BGR a RGB:</u> como se vió anteriormente, las imágenes pueden descomponerse en sus canales básicos. OpenCV almacena los pixels de video en formato BGR, es decir que las matrices de azul y rojo se encuentran invertidas. Con este filtro, podremos ver que al convertir la imagen a RGB, el objeto que en este caso es rojo, se verá azul y lo mismo ocurrirá con los tonos intermedios de estos dos colores. </li>
+                          </ol>
+                          
+                          <center>
+                          <img  class="img-fluid mx-auto d-block" src="/assets/images/opencv/Deadpool.png" style="zoom: 50%;" />
+                          </center>
+                          
+                          <h4 id="código-1">Código</h4>
+                          <script src="https://gist.github.com/camvives/b9cda75cbd3b855771c7be2c65a356af.js"></script>
+                          
+                          <h2 id="recursos-adicionales">Recursos Adicionales</h2>
+                          <ul>
+                            <li>Canal de Youtube  de  Murtaza’s Workshop - Robotics and AI: <a href="https://www.youtube.com/c/MurtazasWorkshopRoboticsandAI">https://www.youtube.com/c/MurtazasWorkshopRoboticsandAI</a></li>
+                            <li>Blog de OMES: <a href="https://omes-va.com/">https://omes-va.com/</a></li>
+                            <li>Curso oficial OpenCV con Python: <a href="https://opencv.org/course-opencv-python/">https://opencv.org/course-opencv-python/</a></li>
+                          </ul>
+                          
+                          <h2 id="referencias">Referencias</h2>
+                          <ul>
+                            <li>OpenCV - About: <a href="https://opencv.org/about/">https://opencv.org/about/</a></li>
+                            <li>Computer vision: <a href="https://en.wikipedia.org/wiki/Computer_vision">https://en.wikipedia.org/wiki/Computer_vision</a></li>
+                            <li>Machine perception: <a href="https://en.wikipedia.org/wiki/Machine_perception">https://en.wikipedia.org/wiki/Machine_perception</a></li>
+                            <li>Open Source Sports Video Analysis using Machine Learning: <a href="https://dev.to/stephan007/open-source-sports-video-analysis-using-maching-learning-2ag4">https://dev.to/stephan007/open-source-sports-video-analysis-using-maching-learning-2ag4</a></li>
+                            <li>Raj, E.T. &amp; Kumaresan, M.. (2016). Boundary detection algorithm for brain tumor position and area detection using OPENCV. 11.: <a href="https://www.semanticscholar.org/paper/Boundary-Detection-Algorithm-For-Brain-Tumor-And-Raj-Kumaresan/5a5ddad9d3c99bc1a986e69838ae0ffa9d9c3d17">https://www.semanticscholar.org/paper/Boundary-Detection-Algorithm-For-Brain-Tumor-And-Raj-Kumaresan/5a5ddad9d3c99bc1a986e69838ae0ffa9d9c3d17</a></li>
+                            <li>Road Traffic Counting App detection with OpenCV: <a href="https://www.fellow-consulting.com/road-traffic-counting-app-detection-with-opencv/">https://www.fellow-consulting.com/road-traffic-counting-app-detection-with-opencv/</a></li>
+                            <li>Introduction to OpenCV: <a href="https://docs.opencv.org/master/da/df6/tutorial_py_table_of_contents_setup.html">https://docs.opencv.org/master/da/df6/tutorial_py_table_of_contents_setup.html</a></li>
+                            <li>Mat - The Basic Image Container: <a href="https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html">https://docs.opencv.org/master/d6/d6d/tutorial_mat_the_basic_image_container.html</a></li>
+                            <li>How do digital images work?: <a href="https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82">https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z2tgr82</a></li>
+                            <li>Grayscale: <a href="https://en.wikipedia.org/wiki/Grayscale">https://en.wikipedia.org/wiki/Grayscale</a></li>
+                            <li>How to Convert an RGB Image to Grayscale: <a href="https://e2eml.school/convert_rgb_to_grayscale.html">https://e2eml.school/convert_rgb_to_grayscale.html</a></li>
+                            <li>Channel (digital image): <a href="https://en.wikipedia.org/wiki/Channel_(digital_image)">https://en.wikipedia.org/wiki/Channel_(digital_image)</a></li>
+                            <li>HSL and HSV: <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">https://en.wikipedia.org/wiki/HSL_and_HSV</a></li>
+                            <li>Antonio Herrera - Modelos de Color: <a href="https://ahenav.com/2014/04/09/modelos-de-color/">https://ahenav.com/2014/04/09/modelos-de-color/</a></li>
+                            <li>Descripción del modelo de color HSL: <a href="http://guiadigital.uam.es/SCUAM/documentacion/pdfs_a_descargar/color.pdf">http://guiadigital.uam.es/SCUAM/documentacion/pdfs_a_descargar/color.pdf</a></li>
+                            <li>Template Matching: <a href="https://docs.opencv.org/3.4/de/da9/tutorial_template_matching.html">https://docs.opencv.org/3.4/de/da9/tutorial_template_matching.html</a></li>
+                            <li>Desenfoque Gaussiano: <a href="https://es.wikipedia.org/wiki/Desenfoque_gaussiano">https://es.wikipedia.org/wiki/Desenfoque_gaussiano</a></li>
+                            <li>Laplacian Filter: <a href="https://www.sciencedirect.com/topics/engineering/laplacian-filter">https://www.sciencedirect.com/topics/engineering/laplacian-filter</a></li>
+                          </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer-->
+        
+        <footer class="border-top" id="contactme">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <h4 class="mb-3"><i>Contacto</i></h4>
+
+                            <li class="list-inline-item">
+                                <a href="mailto:camvives@gmail.com">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://t.me/camvives">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa-brands fa-telegram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/camvives">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Camila Vives - 2022 || Photo by <a href="https://unsplash.com/@askkell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andy Kelly</a> on <a href="https://unsplash.com/s/photos/artificial-intelligence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
