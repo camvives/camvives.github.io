@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Camila Vives - Página Personal</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+                       <!-- Back to top button -->
+                <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <script>
+                    //Get the button
+                    let mybutton = document.getElementById("btn-back-to-top");
+        
+                    // When the user scrolls down 20px from the top of the document, show the button
+                    window.onscroll = function () {
+                    scrollFunction();
+                    };
+        
+                    function scrollFunction() {
+                    if (
+                    document.body.scrollTop > 20 ||
+                    document.documentElement.scrollTop > 20
+                    ) {
+                    mybutton.style.display = "block";
+                    } else {
+                    mybutton.style.display = "none";
+                    }
+                    }
+                    // When the user clicks on the button, scroll to the top of the document
+                    mybutton.addEventListener("click", backToTop);
+        
+                    function backToTop() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                    }
+                </script>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Camvives</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="#contactme">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/images/Natacion/nadador.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>Natación APP</h1>
+                            
+                            <h2 class="subheading">Sistema de gestión de torneos de Natación desarrollado en Flask</h2>
+                            <a href="https://github.com/camvives/Natacion_app">
+                                <button type="button" class=" btn-md btn-outline-dark">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github " viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                      </svg>
+                                    Ver código en Github
+                                </button>
+                            </a>
+                            <span class="meta mt-3">
+                                <p class="text-black-80 ">
+                                    Tecnologías: Python - Flask - SQLite
+                                  </p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-15 col-lg-8 col-xl-10">
+                      <h2>Descripción del sistema</h2>
+                        <p>Natación APP permite a los organizadores de torneos de natación registrar competidores en cada uno de los eventos existentes, ordenarlos de forma automática, registrar sus tiempos de competición y generar rankings por evento para determinar ganadores. </p>
+                            <p>El eje de la aplicación se encuentra en el  ordenamiento automático de los nadadores en los eventos. Cada evento está conformado por una prueba, una categoría de edad y una categoría de género (que puede ser Varones, Mujeres o Mixto). De esta forma, se puede tener un evento que sea '100m libres - Categoría A - Mujeres' y otro distinto que sea '100m libres - Categoría A - Mixto'. </p>
+                            <p>A su vez, en cada uno de estos eventos se encontrarán registrados una cantidad N
+                                de nadadores, que deben competir en una pileta de 6 carrilles o andariveles. Los competidores con un tiempo de pre-inscripción menor (tiempo obtenido en entrenamientos) deben ubicarse en los carrilles centrales. Si existen más de 6 nadadores registrados, se deben dividir en distintas piletas de forma equitativa.</p>
+                                <img class="img-fluid mx-auto d-block" src="../assets/images/Natacion/pileta.png" alt="Orden de nadadores" style="zoom:30%;" /></p>
+                            <p>Además se incluye un ordenamiento recreativo que permite ordenar a los nadadores de un evento de forma aleatoria, sin tener en cuenta su tiempo de pre-inscripción. En este modo no existe la carga de resultados, ya que no forman parte de los eventos competitivos.</p>
+                        <h2>Funcionalidades</h2>
+                        <p>La aplicación cuenta con las siguientes funciones:</p>
+                        <ul>
+                            <li>Alta, baja, modificación y consulta de Nadadores</li>
+                            <li>Alta, baja, modificación y consulta de Pruebas</li>
+                            <li>Alta, baja, modificación y consulta de Clubes</li>
+                            <li>Alta, baja, modificación y consulta de Categorías</li>
+                            <li>Ordenamiento de nadadores por pileta en formato competitivo</li>
+                            <li>Ordenamiento de nadadores por pileta en formato recreativo</li>
+                            <li>Carga y modificación de tiempos obtenidos por cada nadador en la competencia</li>
+                            <li>Ranking de ganadores en cada evento según su tiempo de competición</li>
+                            <li>"Cancheo": creación de reportes en formato PDF por club, listando todas las pruebas de sus nadadores, e indicando serie y andarivel en el cual compiten.</li>
+                        </ul>
+
+                        <h2>Stack Tecnologico</h2>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Natacion/stack.png" alt="Stack" style="zoom:25%;" /></p>    
+                        <h3>Capa de datos</h3>
+                        <p>En la capa de datos, se optó por utilizar SQLite, una herramienta de código abierto que facilita el almacenamiento de información en diversos dispositivos de manera sencilla, eficiente, potente y rápida. La elección de esta tecnología se basa en la simplicidad de los datos que necesitan ser registrados y en la velocidad requerida para escribir dicha información. Además, dado que la aplicación no maneja datos sensibles, no se necesita un nivel de seguridad más elevado que el proporcionado por este motor de base de datos.</p>
+                        <h3>Capa de Negocio</h3>
+                        <p>La capa de negocio está definida utilizando el framework de código abierto Flask. Flask es conocido como un "microframework", lo que significa que proporciona las funcionalidades esenciales para el desarrollo web sin imponer una estructura o conjunto de herramientas rígidas.</p>
+                        <h3>Capa de Presentación</h3>
+                        <p>Por último, en la capa de presentación se emplea una combinación de dos tecnologías: Bootstrap y Jinja2. Estas son tecnologías complementarias, que se utilizan en el desarrollo web para crear aplicaciones web atractivas y dinámicas. Bootstrap se encarga del diseño y la apariencia, mientras que Jinja2 se utiliza para generar contenido HTML de manera dinámica y basada en datos del servidor.</p>
+                        
+                        <h2>Diagrama Entidad-Relacion</h2>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Natacion/image-2.png" alt="Stack" style="zoom:20%;" /></p>    
+
+                        <h2>Modelo de datos</h2>
+                        <img class="img-fluid mx-auto d-block" src="../assets/images/Natacion/image-3.png" alt="Stack" style="zoom:20%;" /></p>    
+
+                        <h2>Capturas de pantalla</h2>
+                        </br>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Natacion/cp1.png"  style="zoom:50%;" /></p>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Natacion/cp2.png"  style="zoom:50%;" /></p>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Natacion/cp3.png"  style="zoom:50%;" /></p>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Natacion/cp4.png"  style="zoom:50%;" /></p>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Natacion/cp5.png"  style="zoom:50%;" /></p>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Natacion/cp7.png"  style="zoom:50%;" /></p>
+                        </figure>
+                        <figure class="figure">
+                            <img class="figure-img img-fluid rounded" src="../assets/images/Natacion/cp6.png"  style="zoom:50%;" /></p>
+                        </figure>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer-->
+        
+        <footer class="border-top" id="contactme">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <h4 class="mb-3"><i>Contacto</i></h4>
+
+                            <li class="list-inline-item">
+                                <a href="mailto:camvives@gmail.com">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://t.me/camvives">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fa-brands fa-telegram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/camvives">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/camila-vives/">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Camila Vives - 2023 || Photo by <a href="https://www.freepik.es/foto-gratis/nadador-equipo-piscina-full-shot_16081270.htm#query=swimm&position=45&from_view=search&track=sph">Freepik</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
